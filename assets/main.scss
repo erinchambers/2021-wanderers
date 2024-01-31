@@ -36,8 +36,16 @@ body {
   line-height: 1.5;
 }
 
-.sr-only
-{
+figure,
+img {
+  margin-bottom: 0; // Undo minima defaults
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -51,14 +59,6 @@ body {
 .wrapper {
   padding-left: 25px;
   padding-right: 25px;
-}
-
-.italic {
-  font-style: italic;
-}
-
-p {
-  margin-bottom: 1.5rem;
 }
 
 // Lists
@@ -125,7 +125,7 @@ h1.post-title {
   background: $recovery-hub-indigo;
   border: none;
   font-family: $font-family-sans-serif;
-  min-height: initial;
+  min-height: initial; // Undo minima default
   padding: 20px 0px 20px 5px;
 
   .wrapper {
@@ -195,7 +195,8 @@ h1.post-title {
         align-items: center;
         display: flex;
         height: 100%;
-        padding: 0 12px;
+        padding: 0 20px;
+        width: auto; // Undo minima default
       }
 
       &:hover {
@@ -207,7 +208,7 @@ h1.post-title {
         float: none;
         line-height: 0;
         padding-top: 0;
-        text-align: initial;
+        text-align: initial; // Undo minima default
 
         > svg {
           fill: $grey-color-dark;
@@ -262,23 +263,24 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
+
     .sponsor-logo img {
       height: 75px;
-      width: auto;
+      max-width: none; // Undo minima default
     }
 
     @include media-query($on-palm) {
       align-items: start;
-      flex-direction: column;
+      column-gap: $spacing-unit * 2;
       flex-wrap: wrap;
+      justify-content: start;
       margin-bottom: $spacing-unit / 2;
       margin-top: $spacing-unit / 2;
       row-gap: $spacing-unit / 2;
-    
-      .sponsor-logo {
-        max-width: 75%;
+
+      .sponsor-logo img {
+        height: 50px;
       }
-    
     }
 
   }
