@@ -1,3 +1,14 @@
+---
+layout: paginate
+title: Chapter I
+
+# Metadata
+author: Mary Johnston
+book_title: The Wanderers
+chapter_number: 1
+chapter_title: The Forest
+---
+
 # CHAPTER I
 
 ## THE FOREST[^1]

@@ -1,3 +1,14 @@
+---
+layout: paginate
+title: Chapter IX
+
+# Metadata
+author: Mary Johnston
+book_title: The Wanderers
+chapter_number: 9
+chapter_title: Glaucon and Myrina
+---
+
 # CHAPTER IX
 
 ## GLAUCON AND MYRINA

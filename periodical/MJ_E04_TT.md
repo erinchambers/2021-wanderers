@@ -1,3 +1,15 @@
+---
+layout: page
+title: These Things Can Be Done
+
+# Metadata
+author: Mary Johnston
+date_published: 1914-10-01
+pages: 2
+publication: Virginia Suffrage News
+publication_place: Virginia
+---
+
 # These Things Can Be Done[^1]
 
 ## *Virginia Suffrage News* October 1, 1914, page 2[^2]

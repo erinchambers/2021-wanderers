@@ -1,3 +1,15 @@
+---
+layout: page
+title: Mary Johnston on Progress
+
+# Metadata
+author: Mary Johnston
+date_published: 1911-03-11
+pages: 2
+publication: Woman's Journal
+publication_place:
+---
+
 # MARY JOHNSTON ON PROGRESS[^1]
 
 ## Reported verbatim in the *Woman’s Journal* March 11, 1911, page 2.[^2]

@@ -1,3 +1,13 @@
+---
+layout: paginate
+title: Chapter X
+
+# Metadata
+author: Mary Johnston
+book_title: The Wanderers
+chapter_number: 10
+chapter_title: The Pearl of the Deep
+---
 # CHAPTER X
 
 ## THE PEARL OF THE DEEP

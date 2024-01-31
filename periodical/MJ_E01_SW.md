@@ -1,3 +1,15 @@
+---
+layout: page
+title: The Status of Woman
+
+# Metadata
+author: Mary Johnston
+date_published: 1909-12-12
+pages: 4+3
+publication: The Times Dispatch
+publication_place: Richmond, VA
+---
+
 # The Status of Woman[^1]
 
 ## By Mary Johnston

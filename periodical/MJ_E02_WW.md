@@ -1,3 +1,15 @@
+---
+layout: page
+title: The Woman's War
+
+# Metadata
+author: Mary Johnston
+date_published: 1910-04
+pages: 559-570
+publication: Atlantic Monthly
+publication_place: 
+---
+
 # The Woman’s War[^1]
 
 ## By Mary Johnston

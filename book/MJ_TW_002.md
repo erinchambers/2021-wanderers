@@ -1,3 +1,14 @@
+---
+layout: paginate
+title: Chapter II
+
+# Metadata
+author: Mary Johnston
+book_title: The Wanderers
+chapter_number: 2
+chapter_title: The Cave
+---
+
 # CHAPTER II
 
 ## THE CAVE
