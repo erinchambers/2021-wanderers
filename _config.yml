@@ -4,7 +4,7 @@
 
 ### Site Information
 
-title: Mary Johnston's The Wanderers
+title: Mary Johnston’s <br /><em>The Wanderers</em>
 tagline: 
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend justo. Quisque gravida est a quam ultrices posuere. Suspendisse potenti. Morbi in metus malesuada, facilisis neque at, ornare lorem. Vestibulum augue eros, consectetur nec rhoncus eu, rhoncus at urna.
 
@@ -15,9 +15,43 @@ url: "https://recoveryhub.github.io/" # should not change for Recovery Hub proje
 
 ### Contact
 
-email: 
+email: your-email@example.com 
+privacy_notice: https://www.siue.edu/web-privacy-notice/
+
+### Social Accounts
+
 twitter_username: TheCCWH
 github_username:  recoveryhub
+
+### Sponsors / Organization Logos
+# Can be overridden in _includes/footer.html instead
+
+sponsors:
+  # copy-paste the following 4 lines for each sponsor
+  - sponsor:
+    name: Southern Illinois University Edwardsville
+    link: https://www.siue.edu/
+    logo_path: assets/images/siue.png
+
+  - sponsor:
+    name: St. Catherine University
+    link: https://www.stkate.edu/
+    logo_path: assets/images/stkate.png
+
+  - sponsor: 
+    name: National Endowment for the Humanities
+    link: https://www.neh.gov/
+    logo_path: assets/images/neh.webp
+
+  - sponsor:
+    name: The IRIS Center at SIUE
+    link: https://iris.siue.edu/
+    logo_path: assets/images/iris.png
+    
+  - sponsor: 
+    name: University of Nebraska–Lincoln
+    link: https://www.unl.edu/
+    logo_path: assets/images/unl.png
 
 ### Site Setup / Defaults
 
@@ -81,6 +115,7 @@ theme: minima
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 
 
