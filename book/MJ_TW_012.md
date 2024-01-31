@@ -3,6 +3,7 @@ layout: paginate
 title: Chapter XII
 
 # Metadata
+type: chapter
 author: Mary Johnston
 book_title: The Wanderers
 chapter_number: 12

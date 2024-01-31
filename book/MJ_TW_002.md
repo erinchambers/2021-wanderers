@@ -3,6 +3,7 @@ layout: paginate
 title: Chapter II
 
 # Metadata
+type: chapter
 author: Mary Johnston
 book_title: The Wanderers
 chapter_number: 2

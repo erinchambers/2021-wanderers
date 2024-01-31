@@ -3,6 +3,7 @@ layout: paginate
 title: Chapter VIII
 
 # Metadata
+type: chapter
 author: Mary Johnston
 book_title: The Wanderers
 chapter_number: 8
