@@ -365,6 +365,31 @@ body#index {
   }
 }
 
+// _layouts/pagination.html
+
+.pagination-links {
+  display: flex;
+  gap: $spacing-unit / 2;
+  justify-content: space-between;
+  margin-bottom: $spacing-unit;
+  width: 100%;
+
+  .book-title {
+    margin-right: 4px;
+  }
+}
+
+article.chapter .post-content {
+  border-top: 1px solid $recovery-hub-silver-dark;
+  border-bottom: 1px solid $recovery-hub-silver-dark;
+  padding-top: $spacing-unit;
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+
 
 
 // TEI Styles
