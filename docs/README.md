@@ -1,3 +1,7 @@
+---
+category: site
+---
+
 ## Jekyll Version
 
 Built with Jekyll 3.9.0
