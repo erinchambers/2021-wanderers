@@ -6,7 +6,7 @@ title: Chapter III
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 3
+chapter_number: III
 chapter_title: Big Trouble
 ---
 

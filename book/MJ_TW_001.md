@@ -6,7 +6,7 @@ title: Chapter I
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 1
+chapter_number: I
 chapter_title: The Forest
 ---
 

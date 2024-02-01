@@ -6,7 +6,7 @@ title: Chapter XVII
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 17
+chapter_number: XVII
 chapter_title: Thekla and Eberhard
 ---
 # CHAPTER XVII

@@ -6,7 +6,7 @@ title: Chapter II
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 2
+chapter_number: II
 chapter_title: The Cave
 ---
 

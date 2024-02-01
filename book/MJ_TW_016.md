@@ -6,7 +6,7 @@ title: Chapter XVI
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 16
+chapter_number: XVI
 chapter_title: Moonlight
 ---
 # CHAPTER XVI

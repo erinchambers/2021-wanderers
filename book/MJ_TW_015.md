@@ -6,7 +6,7 @@ title: Chapter XV
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 15
+chapter_number: XV
 chapter_title: The End of the World
 ---
 # CHAPTER XV

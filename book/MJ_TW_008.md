@@ -6,7 +6,7 @@ title: Chapter VIII
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 8
+chapter_number: VIII
 chapter_title: The Priestess of Marduk
 ---
 

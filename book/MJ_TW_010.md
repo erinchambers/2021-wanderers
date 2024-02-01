@@ -6,7 +6,7 @@ title: Chapter X
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: 10
+chapter_number: X
 chapter_title: The Pearl of the Deep
 ---
 # CHAPTER X
