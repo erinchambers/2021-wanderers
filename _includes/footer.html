@@ -10,7 +10,9 @@
           <div class="sponsor-col sponsor-col-{{ forloop.index }}">
             {%- if sponsor.logo_path -%}
             <figure class="sponsor-logo">
-              <img src="{{ sponsor.logo_path | relative_url }}" alt="{{ sponsor.name }} logo" />
+              <a href="{{ sponsor.link }}">
+                <img src="{{ sponsor.logo_path | relative_url }}" alt="{{ sponsor.name }} logo" />
+              </a>
             </figure>
             {%- else -%}
             {{ sponsor.name }}
