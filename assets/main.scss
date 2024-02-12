@@ -81,6 +81,17 @@ ul {
   }
 }
 
+// TOC list - different margins
+
+#markdown-toc {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+
+  li {
+    margin-bottom: initial;
+  }
+}
+
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
