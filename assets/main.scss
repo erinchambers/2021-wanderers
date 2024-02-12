@@ -358,7 +358,6 @@ footer {
   }
 }
 
-
 // Home
 
 .layout_home {
@@ -400,6 +399,10 @@ footer {
 
 // _layouts/pagination.html
 
+a.grayed-out {
+  color: #777;
+}
+
 .pagination-links {
   display: flex;
   gap: $spacing-unit / 2;
@@ -408,6 +411,10 @@ footer {
   width: 100%;
 
   .book-title {
+    margin-right: 4px;
+  }
+  
+  .separator {
     margin-right: 4px;
   }
 }
