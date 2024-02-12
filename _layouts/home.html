@@ -12,10 +12,12 @@ layout: default
         <img src="{{ site.banner_image | relative_url }}" alt="{{ site.banner_alt_text }}" />
       </div>
       <div class="banner-text">
-        <h1 class="page-heading sr-only">{{ site.title }}</h1>
+        <h1 class="page-heading sr-only">{{ site.title | escape }}</h1>
+        {%- if site.description -%}
         <div class="site-description">
           {{ site.description }}
         </div>
+        {%- endif -%}
       </div>
     </div>
     {{ content }}
@@ -28,9 +30,11 @@ layout: default
       </div>
       <div class="banner-text">
         <h1 class="page-heading sr-only">{{ site.title }}</h1>
+        {%- if site.description -%}
         <div class="site-description">
           {{ site.description }}
         </div>
+        {%- endif -%}
       </div>
     </div>
     {{ content }}
@@ -38,11 +42,11 @@ layout: default
   {%- else -%}
 
     <h1 class="page-heading">{{ site.title | strip_newlines }}</h1>
-    
+    {%- if site.description -%}
     <div class="site-description">
       {{ site.description }}
     </div>
-    
+    {%- endif -%}
     {{ content }}
 
   {%- endif -%}
