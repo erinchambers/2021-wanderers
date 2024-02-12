@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Documentation
-menu: main
 permalink: documentation
 ---
 
