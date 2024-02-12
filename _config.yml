@@ -18,6 +18,12 @@ html_site_title: true
 baseurl: "/2021-wanderers" # the subpath of your site, e.g. /blog
 url: "https://recoveryhub.github.io/" # should not change for Recovery Hub projects
 
+### Navigation menu
+
+header_pages: 
+  - about.markdown
+  - book/full.html
+
 ### Banner image
 
 banner_image: assets/images/recovery-hub-banner.jpg
