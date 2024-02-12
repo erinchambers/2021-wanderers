@@ -4,7 +4,18 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths | sort: "label" -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+
+    <!-- if site title needs to include HTML tags,
+    use contents of _includes/html_site_title.html 
+    instead of title: {{ value }} from _config.yml -->
+    {%- if site.html_site_title -%}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        {% include html_site_title.html %}
+      </a>
+    {%- else -%}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    {%- endif -%}
+    <!-- /if site title needs HTML tags -->
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
@@ -17,15 +28,14 @@
           </span>
         </label>
         
-        <!-- removing pages from nav for now -->
         <div class="trigger">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.category == "no_category" -%}
-              {%- if my_page.title -%}
-                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {%- endif -%}
+
+            {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
+            
           {%- endfor -%}
         </div>
       </nav>

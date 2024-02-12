@@ -4,9 +4,14 @@
 
 ### Site Information
 
-title: Mary Johnston’s <br /><em>The Wanderers</em>
+title: Mary Johnston’s The Wanderers
 tagline: 
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend justo. Quisque gravida est a quam ultrices posuere. Suspendisse potenti. Morbi in metus malesuada, facilisis neque at, ornare lorem. Vestibulum augue eros, consectetur nec rhoncus eu, rhoncus at urna.
+
+# If the site title should have HTML in it, e.g. italics around a book title,
+# make changes in _includes/site_title_html.html 
+# then remove the # from the following line:
+html_site_title: true
 
 ### Site Structure
 
@@ -116,7 +121,7 @@ defaults:
 
 
 
-# Build settings
+### Build settings
 theme: minima
 
 plugins:
