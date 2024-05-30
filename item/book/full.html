@@ -1,7 +1,6 @@
 ---
 layout: page
-title: The Wanderers
-permalink: the-wanderers
+title: The Wanderers edition
 
 # Metadata
 author: Mary Johnston
@@ -17,7 +16,7 @@ italicize_title: true
 
   <p>Testing</p>
 
-  {% endcapture %}
+{% endcapture %}
 
 {{ my_variable }}
 
@@ -32,11 +31,11 @@ italicize_title: true
   <h2>Individual Chapters</h2>
     <ul>
       {%- assign default_paths = site.pages | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign page_paths = site.pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       
       {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.category == "book" -%}
           {%- if my_page.title -%}
           {%- unless my_page.name == local_page -%}
