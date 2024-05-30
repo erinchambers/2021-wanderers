@@ -1,6 +1,9 @@
 ---
 title: Listing of all pages
 ---
+---
+title: Listing of all pages
+---
 
 <div class="categories_listing">
   {% for category in site.category_list %}
@@ -12,7 +15,7 @@ title: Listing of all pages
         {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
         
         {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.category == category -%}
             {%- if my_page.title -%}
               <li>
