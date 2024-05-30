@@ -22,7 +22,8 @@ url: "https://recoveryhub.github.io/" # should not change for Recovery Hub proje
 
 header_pages: 
   - about.markdown
-  - book/full.html
+  - listing.html
+  - item/book/full.html
 
 ### Banner image
 
