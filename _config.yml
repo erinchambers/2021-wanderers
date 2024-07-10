@@ -38,9 +38,9 @@ banner_size: "half" # Available values: "full" (full-width) or "half". Defaults 
 # If you want to link only specific pages in your header, list those pages 
 # here (using the filepath) in the order you want them to show up.
 header_pages: 
-  - about.markdown
-  - listing.html
-  - items/book/full.html
+  - "items/books/book.md"
+  - "docs/all-pages.html"
+  - "about.md"
 
 ### Contact
 
@@ -121,10 +121,10 @@ category_list: [
 # Once the edition is complete, if you want to exclude a category from showing up 
 # on the finished site, remove the # at the beginning of the line below and 
 # add the category's folder to the list (separated with commas and spaces). 
-# To hide documentation on the finished site, for example, the "docs" folder 
+# To hide documentation on the finished site, for example, the "documentation" folder 
 # is listed, as is the folder where drafts are stored.
 
-# exclude: ["docs", "source/drafts"] 
+# exclude: ["documentation", "source/drafts"] 
 
 defaults:
   - scope:
@@ -168,7 +168,7 @@ defaults:
       layout: default
       category: essays
   - scope:
-      path: "docs"
+      path: "documentation"
       type: pages
     values:
       layout: default
