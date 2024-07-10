@@ -2,28 +2,30 @@
 
 ## Site Settings
 
-### Site Information
-
-title: Mary Johnston’s The Wanderers
-tagline: 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend justo. Quisque gravida est a quam ultrices posuere. Suspendisse potenti. Morbi in metus malesuada, facilisis neque at, ornare lorem. Vestibulum augue eros, consectetur nec rhoncus eu, rhoncus at urna.
-
-# If the site title should have HTML in it, e.g. italics around a book title,
-# make changes in _includes/site_title_html.html 
-# then remove the # from the following line:
-html_site_title: true
-
 ### Site Structure
 
 baseurl: "/2021-wanderers" # the subpath of your site, e.g. /blog
 url: "https://recoveryhub.github.io/" # should not change for Recovery Hub projects
 
-### Navigation menu
+### Site Title
 
-header_pages: 
-  - about.markdown
-  - listing.html
-  - item/book/full.html
+title: Mary Johnston’s The Wanderers
+tagline: 
+
+# If the site title needs to be formatted, e.g. with italics,
+# use HTML in _includes/site_title_html.html to format the text
+# and then remove the # at the beginning of the following line:
+html_site_title: true
+
+### Site Description
+
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: > 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut 
+  eleifend justo. Quisque gravida est a quam ultrices posuere. Suspendisse 
+  potenti. Morbi in metus malesuada, facilisis neque at, ornare lorem. 
+  Vestibulum augue eros, consectetur nec rhoncus eu, rhoncus at urna.
 
 ### Banner image
 
@@ -31,18 +33,38 @@ banner_image: assets/images/recovery-hub-banner.jpg
 banner_alt_text: Recovery Hub of American Women Writers with quill icon and pages of a book in the background
 banner_size: "half" # Available values: "full" (full-width) or "half". Defaults to half if left blank.
 
+### Navigation
+
+# If you want to link only specific pages in your header, list those pages 
+# here (using the filepath) in the order you want them to show up.
+header_pages: 
+  - about.markdown
+  - listing.html
+  - items/book/full.html
+
 ### Contact
 
-email: your-email@example.com 
+author:
+  # "name" can contain one or multiple names and will be listed in the footer by default
+  name:  
+  email: 
+  institution: 
+
+### Privacy Notice
+
 privacy_notice: https://www.siue.edu/web-privacy-notice/
 
 ### Social Accounts
 
-twitter_username: TheCCWH
-github_username:  recoveryhub
+facebook_username: 
+twitter_username: 
+instagram_username: 
+github_username:  
 
 ### Sponsors / Organization Logos
-# Can be overridden in _includes/footer.html instead
+
+# You can add/edit/remove sponsors below, or override the 
+# the HTML in the footer template _includes/footer.html 
 
 sponsors:
   # copy-paste the following 4 lines for each sponsor
@@ -71,18 +93,38 @@ sponsors:
     link: https://www.unl.edu/
     logo_path: assets/images/unl.png
 
-### Site Setup / Defaults
+# Site Setup / Defaults
 
-# Categories listed here must match the 
-# categories in defaults, below. 
-# The categories are not showing up in the 
-# site.categories object  ¯\_(ツ)_/¯
+# If all pages in the edition have the same editor(s), list them here
+# and remove the # at the beginning of the line.
+# editor: Editor(s) names here
 
-collections: 
-  - items
-  - test
+## Categories
 
-category_list: ["no_category", "site", "draft", "book", "periodical", "essay"]
+# Categories listed here must match the categories in defaults below. 
+# If you add a category, be sure to add it in both places.
+# We use categories instead of Jekyll's built-in collections functionality 
+# because the latter does not account for files with no headmatter.
+
+category_list: [
+  "none", 
+  "drafts", 
+  "books", 
+  "periodicals", 
+  "essays", 
+  "poems", 
+  "documentation"
+  ]
+
+### Exclude specific categories from showing up
+
+# Once the edition is complete, if you want to exclude a category from showing up 
+# on the finished site, remove the # at the beginning of the line below and 
+# add the category's folder to the list (separated with commas and spaces). 
+# To hide documentation on the finished site, for example, the "docs" folder 
+# is listed, as is the folder where drafts are stored.
+
+# exclude: ["docs", "source/drafts"] 
 
 defaults:
   - scope:
@@ -90,53 +132,71 @@ defaults:
       type: pages
     values:
       layout: default
-      category: no_category
+      category: none
   - scope:
-      path: "_pages"
-      type: pages 
-    values:
-      layout: default
-      category: site
-  - scope:
-      path: "Source/Draft"
+      path: "source/drafts"
       type: pages
     values:
       layout: default
-      category: draft
+      category: drafts
       # This should work according to this page but does not https://talk.jekyllrb.com/t/creating-custom-permalinks-for-each-post-category/434/4
       # permalink: draft/:title
+# Item Types
   - scope:
-      path: "book"
+      path: "items/books"
       type: pages
     values:
       layout: paginate
-      category: book
+      category: books
   - scope:
-      path: "periodical"
+      path: "items/periodicals"
       type: pages
     values:
       layout: paginate
-      category: periodical
+      category: periodicals
   - scope:
-      path: "essay"
+      path: "items/poems"
       type: pages
     values:
       layout: default
-      category: essay
+      category: poems
+# Paratext (Introduction, Essays, Documentation)
+  - scope:
+      path: "essays"
+      type: pages
+    values:
+      layout: default
+      category: essays
+  - scope:
+      path: "docs"
+      type: pages
+    values:
+      layout: default
+      category: documentation
 
+# To use Jekyll collections, set them up here:
+collections: 
+  - items
 
+# Theme and Build settings
 
-
-
-### Build settings
+# If you clone the Minima repo and build locally, use this setting.
 theme: minima
+
+# As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
+# If you want to use the latest Minima version on GitHub Pages, use the following setting and 
+# add a line comment on "theme: minima" above.
+#remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - kramdown
 
-
-
+# Minima date format.
+# The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
+# Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+#date_format: "%b-%d-%Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
