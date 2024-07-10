@@ -1,12 +1,12 @@
 ---
 layout: paginate
-title: Chapter II
+title: "Chapter II: The Cave"
 
 # Metadata
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: II
+chapter_number: 2
 chapter_title: The Cave
 ---
 

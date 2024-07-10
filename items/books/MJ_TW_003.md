@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter III
+title: "Chapter III: Big Trouble"
 
 # Metadata
 type: chapter

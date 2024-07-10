@@ -1,12 +1,12 @@
 ---
 layout: paginate
-title: Chapter I
+title: "Chapter I: The Forest"
 
 # Metadata
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: I
+chapter_number: 1
 chapter_title: The Forest
 ---
 
