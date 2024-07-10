@@ -12,9 +12,13 @@
   </div>
   <div>
     {% if page.book_title %}
-      <a class="book-title" href="#"><!-- TODO work out how to link back to full volume -->
-      {{ page.book_title }}
-      </a>
+      {% assign this_book = page.book_title %}
+      {% assign full_book = site.pages | where_exp: "page", "page.book_title == this_book" | where_exp: "page", "page.type == chapter" %}
+        {% for page in full_book %}
+          <a href="{{ page.url | relative_url }}">
+            {{ page.book_title }}
+          </a>
+        {% endfor %}
       {% if page.book_title and page.chapter_number %}
       <span class="separator">|</span>
       {% endif %}
