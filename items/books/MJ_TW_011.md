@@ -6,7 +6,7 @@ title: Chapter XI
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: XI
+chapter_number: 11
 chapter_title: The Banks of Jumuna
 ---
 

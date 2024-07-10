@@ -6,7 +6,7 @@ title: Chapter XIV
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: XIV
+chapter_number: 14
 chapter_title: The Hermits
 ---
 

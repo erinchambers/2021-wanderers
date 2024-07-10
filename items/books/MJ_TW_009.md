@@ -6,7 +6,7 @@ title: Chapter IX
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: IX
+chapter_number: 9
 chapter_title: Glaucon and Myrina
 ---
 

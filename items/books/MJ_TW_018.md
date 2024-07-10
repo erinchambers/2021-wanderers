@@ -6,7 +6,7 @@ title: Chapter XVIII
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: XVIII
+chapter_number: 18
 chapter_title: The Right of Kings
 ---
 # CHAPTER XVIII

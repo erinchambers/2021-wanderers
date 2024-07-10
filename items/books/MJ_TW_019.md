@@ -6,7 +6,7 @@ title: Chapter XIX
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: XIX
+chapter_number: 19
 chapter_title: Jean and Espérance
 ---
 

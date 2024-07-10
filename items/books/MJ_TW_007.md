@@ -6,7 +6,7 @@ title: Chapter VII
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: VII
+chapter_number: 7
 chapter_title: The Amazon
 ---
 

@@ -6,7 +6,7 @@ title: Chapter V
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: V
+chapter_number: 5
 chapter_title: What's in a Name?
 ---
 # CHAPTER V

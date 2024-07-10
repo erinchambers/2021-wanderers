@@ -6,7 +6,7 @@ title: Chapter XII
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: XII
+chapter_number: 12
 chapter_title: Valerian and Valeria
 ---
 

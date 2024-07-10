@@ -6,7 +6,7 @@ title: Chapter VI
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: VI
+chapter_number: 6
 chapter_title: The Prophet
 ---
 # CHAPTER VI

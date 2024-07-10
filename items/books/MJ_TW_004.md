@@ -6,7 +6,7 @@ title: Chapter IV
 type: chapter
 author: Mary Johnston
 book_title: The Wanderers
-chapter_number: IV
+chapter_number: 4
 chapter_title: Property
 ---
 
