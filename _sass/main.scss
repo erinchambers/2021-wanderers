@@ -1,7 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
 @import "minima";
 
 // @charset "utf-8";
@@ -38,17 +34,8 @@ body {
   line-height: 1.5;
 }
 
-figure,
-img {
-  border-radius: 0; // Undo minima defaults
-  margin-bottom: 0; // Undo minima defaults
-}
-
-p {
-  margin-bottom: 1.5rem;
-}
-
-.sr-only {
+.sr-only
+{
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -60,7 +47,6 @@ p {
 }
 
 .wrapper {
-  max-width: 900px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -79,7 +65,7 @@ ul {
   }
 
   li {
-    // margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   
     p {
       margin-bottom: 0;
@@ -101,7 +87,6 @@ ul {
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-serif;
   font-weight: 500;
 }
 
@@ -122,23 +107,6 @@ h1.post-title {
   border-bottom: 1px solid lightgray;
 }
 
-
-/*
-// Blue underscore
-h1.post-title {
-  margin-bottom: $spacing-unit * 1.25;
-  &:after {
-    content: "";
-    background-color: $recovery-hub-blue;
-    display: block;
-    height: 4px;
-    position: relative;
-    top: $spacing-unit / 2;
-    width: $spacing-unit * 2;
-  }
-}
-*/
-
 /*
  * Site header
  * Overwriting minima _layout.scss
@@ -148,7 +116,7 @@ h1.post-title {
   background: $recovery-hub-indigo;
   border: none;
   font-family: $font-family-sans-serif;
-  min-height: initial; // Undo minima default
+  min-height: initial;
   padding: 20px 0px 20px 5px;
 
   .wrapper {
@@ -165,11 +133,12 @@ h1.post-title {
 
  .site-title {
   color: #fff;
-  font-family: $font-family-serif;
   font-size: 24px;
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: 0.25px;
   margin-right: $spacing-unit;
+  text-transform: uppercase;
 
     &,
     &:visited {
@@ -179,10 +148,6 @@ h1.post-title {
     @include media-query($on-palm) {
       font-size: 20px;
       margin-right: $spacing-unit * 2;
-    }
-
-    span {
-      display: block;
     }
   }
 
@@ -218,8 +183,7 @@ h1.post-title {
         align-items: center;
         display: flex;
         height: 100%;
-        padding: 0 20px;
-        width: auto; // Undo minima default
+        padding: 0 12px;
       }
 
       &:hover {
@@ -231,7 +195,7 @@ h1.post-title {
         float: none;
         line-height: 0;
         padding-top: 0;
-        text-align: initial; // Undo minima default
+        text-align: initial;
 
         > svg {
           fill: $grey-color-dark;
@@ -398,76 +362,6 @@ body#index {
   }
 }
 
-.layout_home {
-  .page-content {
-    padding-top: 0;
-  }
-
-  // Full-width banner image
-  .banner-full {
-    .site-description {
-      margin-top: $spacing-unit;
-    }
-  }
-
-  // Half-width banner image 
-  .banner-half {
-    display: flex;
-    gap: $spacing-unit;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
-
-    @include media-query($on-palm) {
-      flex-direction: column;
-    }
-
-    .banner-image {
-      flex-basis: 50%;
-
-      @include media-query($on-palm) {
-        flex-basis: 100%;
-      }
-    }
-
-    .banner-text {
-      flex-basis: 50%;
-    }
-  }
-}
-
-// _layouts/pagination.html
-
-a.grayed-out {
-  color: #777;
-}
-
-.pagination-links {
-  display: flex;
-  gap: $spacing-unit / 2;
-  justify-content: space-between;
-  margin-bottom: $spacing-unit;
-  width: 100%;
-
-  .book-title {
-    margin-right: 4px;
-  }
-  
-  .separator {
-    margin-right: 4px;
-  }
-}
-
-article.chapter .post-content {
-  border-top: 1px solid $recovery-hub-silver-dark;
-  border-bottom: 1px solid $recovery-hub-silver-dark;
-  padding-top: $spacing-unit;
-
-  h1 {
-    font-size: 32px;
-  }
-}
-
-
 
 
 // TEI Styles
@@ -549,9 +443,9 @@ article.chapter .post-content {
 
 /*  Notes on future alterations */
 
-[data-tei-e-damage] {
+[data-tei-e-damage]::after { /* formatting adds [?] at end */
   content: '[?]';
-} /* formatting adds [?] at end */
+} 
 
 .tei-list-container [data-tei-e="head"] {
   font-size: 1.2em;
@@ -625,303 +519,3 @@ table, tr, td {
   border: 1px #aaa solid;
 }
 
-
-.categories_listing {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
-  h2 {
-    margin: 0
-  }
-}
-
-.category_listing {
- border: 1px solid #aaa;
- margin: 10px 10px 0 0;
- padding: 10px;
- flex-grow: 1;
-
-}
-
-pre {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-/* Collapsible sections */
-
-.metadata-box details,
-.chapter-list details {
-  background-color: rgb(250,250,250);
-  border: 1px solid rgb(240,240,240);
-  margin: 10px 0;
-  padding: 8px 16px;
-}
-
-.chapter-list {
-  margin-bottom: 3rem;
-}
-
-details ul {
-  list-style-type: none;
-  margin: 0;
-}
-
-details .details-content {
-  padding-left: 17px;
-}
-
-.post-content details summary {
-  margin: 0;
-}
-
-.post-content details summary h2 {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 4px;
-  margin-top: 2px;
-}
-
-/* Whole book page */
-.whole-book {
-  margin-top: 2rem;
-}
-
-.whole-book .book-section {
-  border-top: 1px solid rgb(220,220,220);
-  margin-top: 8rem;
-  padding-top: 8rem;
-}
-
-.whole-book .book-section:first-of-type {
-  margin-top: 3rem;
-  padding-top: 3rem;
-}
-
-
-
-.whole-book .individual-chapter-link {
-  margin: 0;
-  float: right;
-}
-
-.whole-book h1 {
-  margin-top: 0;
-}
-
-.whole-book h1 + h2 {
-  margin-top: 1rem;
-}
-
-/* Text formatting styles for poems */
-
-/*
- ED special layouts
-*/
-
-p.centered {
-  text-align: center;
-}
-
-p.larger {
-  font-size: 1.6rem;
-}
-
-p.large {
-  font-size: 1.4rem
-}
-
-p.small {
-  font-size: 0.8rem;
-}
-
-div.poem,
-.poem,
-div.narrative,
-.narrative {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-
-div.toc {
-  margin-bottom: 4rem;
-}
-
-
-/*
-  Poem styles
-  If you want your lines not to wrap on small screens, add the rule "white-space: nowrap;"; If you
-  want you want to remove the hanging indent, reset the padding-left to 0 and erase text-indent
-*/
-
-.poem ul,
-.poetry ul,
-ul.poetry {
-  list-style: none;
-  list-style-type: none;
-  padding-left: 1rem;
-  text-indent: -1rem;
-}
-
-
-/* This snippet helps us reset the margin for all spans with the indent- class */
-.poem span[class^='indent-'],
-.poetry span[class^='indent-'] {
-  margin: 0;/* reset browsers default margin styles*/
-}
-
-
-/*
-  To set line indentation for poetry wrap the line in a span with a class="indent-x" attribute.
-  The x is represents a rem (root em) value
-*/
-
-.indent-1 {
-  padding-left: 1rem;
-}
-
-.indent-2 {
-  padding-left: 2rem;
-}
-
-.indent-3 {
-  padding-left: 3rem;
-}
-
-.indent-4 {
-  padding-left: 4rem;
-}
-
-.indent-5 {
-  padding-left: 5rem;
-}
-
-.indent-6 {
-  padding-left: 6rem;
-}
-
-.indent-7 {
-  padding-left: 7rem;
-}
-
-.indent-8 {
-  padding-left: 8rem;
-}
-
-.indent-9 {
-  padding-left: 9rem;
-}
-
-.indent-10 {
-  padding-left: 10rem;
-}
-
-.poem .byline,
-.poetry .byline {
-  font-style: italic;
-  font-weight: normal;
-  letter-spacing: 0;
-  margin-top: -.5rem;
-}
-
-/* Footnotes styles */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-.footnotes {
-  line-height: 1.2rem;
-  font-size: 0.9rem;
-  letter-spacing: .01rem;
-}
-
-.footnotes .foot-block {
-  display: inline-block;
-  padding: 0 4rem 0 2rem;
-  margin-bottom: .8rem;
-  font-style: italic;
-}
-
-a.footnote {
-  padding-left: .1rem;
-  font-size: .66rem;
-}
-
-/*Bibliography styles */
-ol.bibliography {
-  list-style-type:none;
-  padding-left: 1rem;
-  text-indent: -1rem;
-}
-
-/* Diplomatic editions */
-ins,
-.add {
-  color:#288828;
-  font-style: italic;
-}
-
-del,
-.delete {
-  text-decoration: line-through;
-  color: #AA3232;
-}
-
-u,
-.underline {
-  text-decoration: underline;
-}
-
-
-/*
-  Line layouts for prose-poetry and theater
-  To use these layouts you need to add the classes to your markdown or HTML lines.
-  (ex. "- {:.centered} hello!")
-*/
-
-li.centered {
-  text-align: center;
-}
-
-li.speaker,
-li.speakerGroup {
-  text-align: center;
-  padding-top: 1.2em;
-}
-
-li.speakerGroup {
-  margin-bottom: -1.6em;
-}
-
-/* To add an attribution, make sure to make a line with the attribution class */
-
-li.attribution {
-  text-align: right;
-  list-style: none;
-  padding: 0rem 1.5rem 0rem 2rem;
-  margin: 0 0 20px 0;
-  color: #454545;
-}
-
-li.prose {
-  list-style-position: inside;
-  margin-left: -1em;
-  text-indent: 0;
-}
-
-li.prose-indent {
-  text-indent: 2rem;
-}
