@@ -30,8 +30,8 @@ layout: page
     <div class="details-content">
       <ul>
         {% assign this_book = page.book_title %}
-        {% assign this_book_only_chapters = site.pages | where_exp: "page", "page.book_title == this_book" | group_by: "chapter_number" %}
-        {% assign sorted_by_number = this_book_only_chapters | sort: "name" %}
+        {% assign this_book_only_chapters = site.pages | where_exp: "page", "page.book_title == this_book" %}
+        {% assign sorted_by_number = this_book_only_chapters | group_by: "chapter_number" %}
         {% for chapter_by_number in sorted_by_number %}
           {% assign sorted_by_number_and_title = chapter_by_number.items | sort: "title" %}
           {% for chapter in sorted_by_number_and_title %}
