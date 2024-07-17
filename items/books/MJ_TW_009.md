@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter IX
+title: "Chapter IX: Glaucon and Myrina"
 
 # Metadata
 type: chapter

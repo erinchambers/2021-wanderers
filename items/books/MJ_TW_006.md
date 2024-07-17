@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter VI
+title: "Chapter VI: The Prophet"
 
 # Metadata
 type: chapter
@@ -9,6 +9,7 @@ book_title: The Wanderers
 chapter_number: 6
 chapter_title: The Prophet
 ---
+
 # CHAPTER VI
 
 ## THE PROPHET

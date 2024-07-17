@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter XIV
+title: "Chapter XIV: The Hermits"
 
 # Metadata
 type: chapter

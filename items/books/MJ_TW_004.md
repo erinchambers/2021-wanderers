@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter IV
+title: "Chapter IV: Property"
 
 # Metadata
 type: chapter

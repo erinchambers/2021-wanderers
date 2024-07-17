@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter V
+title: "Chapter V: What's in a Name?"
 
 # Metadata
 type: chapter
@@ -9,6 +9,7 @@ book_title: The Wanderers
 chapter_number: 5
 chapter_title: What's in a Name?
 ---
+
 # CHAPTER V
 
 ## WHAT’S IN A NAME?

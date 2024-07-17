@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter VIII
+title: "Chapter VIII: The Priestess of Marduk"
 
 # Metadata
 type: chapter

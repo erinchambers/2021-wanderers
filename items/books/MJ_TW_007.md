@@ -1,6 +1,6 @@
 ---
 layout: paginate
-title: Chapter VII
+title: "Chapter VII: The Amazon"
 
 # Metadata
 type: chapter
