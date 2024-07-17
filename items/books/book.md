@@ -20,4 +20,4 @@ annotations_by:
 edited_by: 
 ---
 
-Whatever you put in this file (full.html) will appear in the full book view below the metadata and chapters list. (Delete this paragraph if you don't need extra text; do not delete the metadata, however.)
+Whatever you put in this file (book.md) will appear in the full book view below the metadata and chapters list. (Delete this paragraph if you don't need extra text; do not delete the metadata, however.)
