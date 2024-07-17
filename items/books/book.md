@@ -15,9 +15,6 @@ pages: 426
 
 # Encoding Description (info about the editing and encoding of this digital file)
 annotations_by: 
-  - Me
-  - You
-  - Them
 
 # Editor of the whole edition/site is set in _config.yml. If edited_by is filled in below, it will override the editor listed _config.yml.
 edited_by: 
